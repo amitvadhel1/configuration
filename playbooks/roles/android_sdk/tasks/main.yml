@@ -13,7 +13,7 @@
 #   - pre-Ubuntu 16 releases do not contain the android sdk in their apt repos
 #   - the existing ppas containing the sdk are questionable
 #   - ubuntu-make did not seem reliable at the time of writing this
-- name: Download the Android SDK tarball
+- name: Download the Android SDK
   get_url:
     url: "https://dl.google.com/android/repository/{{ android_download }}"
     dest: /tmp/android-sdk.zip
